@@ -63,7 +63,8 @@ set-window-option -g window-status-format '#[fg=#6699cc,bg=colour235] #I #[fg=#9
 
 # make foreground window look like bold yellow foreground tab
 # set-window-option -g window-status-current-attr none
-set-window-option -g window-status-current-format '#[fg=#f99157,bg=#2d2d2d] #I #[fg=#cccccc,bg=#393939] #W #[default]'
+# set-window-option -g window-status-current-format '#[fg=#f99157,bg=#2d2d2d] #I #[fg=#cccccc,bg=#393939] #W #[default]'
+set-window-option -g window-status-current-format '#[fg=#2d2d2d,bg=#f99157] #I #[fg=#393939,bg=#cccccc] #W#{?window_zoomed_flag,*Z,} #[default]'
 
 # active terminal yellow border, non-active white
 # set -g pane-border-bg default
